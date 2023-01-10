@@ -17,7 +17,7 @@ export const lambdaHandler = async (event, context) => {
         return {
             'statusCode': 200,
             'body': JSON.stringify({
-                message: 'hello world from lambda-a to test test branch',
+                message: 'hello world from lambda-a to test lambda-a and lambda-b modified together',
             })
         }
     } catch (err) {
