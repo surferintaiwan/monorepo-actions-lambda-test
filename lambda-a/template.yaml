@@ -36,4 +36,4 @@ Outputs:
     Value: !GetAtt LambdaAFunction.Arn
   LambdaAFunctionIamRole:
     Description: "Implicit IAM Role created for LambdaAFunction"
-    Value: !GetAtt LambdaAFunctionIamRole.Arn
+    Value: !GetAtt LambdaAFunctionRole.Arn
