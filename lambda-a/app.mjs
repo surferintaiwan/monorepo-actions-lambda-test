@@ -13,7 +13,7 @@
 
 export const lambdaHandler = async (event, context) => {
     try {
-        console.log(111)
+        console.log('try2')
         return {
             'statusCode': 200,
             'body': JSON.stringify({
