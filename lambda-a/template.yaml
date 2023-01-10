@@ -29,11 +29,11 @@ Outputs:
   # Find out more about other implicit resources you can reference within SAM
   # https://github.com/awslabs/serverless-application-model/blob/master/docs/internals/generated_resources.rst#api
   LambdaAApi:
-    Description: "API Gateway endpoint URL for Prod stage for Hello World function"
+    Description: "API Gateway endpoint URL for Prod stage for LambdaAFunction"
     Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/hello/"
   LambdaAFunction:
-    Description: "Hello World Lambda Function ARN"
-    Value: !GetAtt LambdaA.Arn
-  LambdaAIamRole:
-    Description: "Implicit IAM Role created for Hello World function"
-    Value: !GetAtt LambdaAIamRole.Arn
+    Description: "Hello World LambdaAFunction ARN"
+    Value: !GetAtt LambdaAFunction.Arn
+  LambdaAFunctionIamRole:
+    Description: "Implicit IAM Role created for LambdaAFunction"
+    Value: !GetAtt LambdaAFunctionIamRole.Arn
